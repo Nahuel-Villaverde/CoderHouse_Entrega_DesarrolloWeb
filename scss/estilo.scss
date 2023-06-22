@@ -244,6 +244,40 @@ h1{
     }
 }
 
+.footerContacto{
+    padding-top: 10px;
+    background-color: #1b263b27;
+    color: white;
+    height: 140px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    top: 1500px;
+    h6{
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-weight: 800;
+    
+    }
+}
+
+.neonContacto{
+    display: flex;
+    width: 668px;
+    margin-top: 80px;
+    margin-left: 108px;
+    padding: 0;
+    img{
+        width: 670px;
+        height: 850px;
+        
+    }
+}
+
 
 .tituloHabilidades{
     display: flex;
@@ -511,6 +545,18 @@ h1{
     align-items: center;
 }
 
+.textoPrincipalContacto{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.nombreContacto{
+    height: 90px;
+    margin-top: 220px;
+    margin-left: 80px;
+}
+
 
 
 
@@ -676,6 +722,60 @@ h1{
             "img5 img6"
             "img7 img8"
             "img9 img9";
+    }
+
+    /* Contacto*/
+    
+    .textoPrincipalContacto{
+        width: 450px;
+    }
+    
+    .nombreContacto{
+        height: 90px;
+        margin-top: 140px;
+        margin-left: 60px;
+        h1{
+            font-size: 35px;
+        }
+    }
+
+    .resumenContacto{
+        margin-left: 60px;   
+        width: 300px; 
+        p{
+            font-size: 16px;
+        }
+    }
+
+    .redes{
+        padding-left: 0px;
+    }
+
+    .linksredes a{
+        margin-left: 60px;
+    }
+
+    .linksredesfinal a{
+        margin-left: 60px;
+    }
+
+    .contenedorIndexContacto{
+        height: 930px;
+    }
+
+    .footerContacto{
+        top: 1030px;
+    }
+
+    .neonContacto{
+        width: 315px;
+        margin-top: 90px;
+        margin-left: 0;
+        img{
+            width: 315px;
+            height: 400px;
+            
+        }
     }
     
 
@@ -874,6 +974,55 @@ h1{
         }
     }
 
+    /* Contacto */
+
+    .nombreContacto {
+        margin-left: 20px;
+    }
+
+    .resumenContacto{
+        margin-left: 20px;   
+    }
+
+    .linksredes a{
+        margin-left: 20px;
+    }
+
+    .linksredesfinal a{
+        margin-left: 20px;
+    }
+
+    .resumenContacto{
+        height: 65px;
+    }
+
+    .linksredes{
+        margin-top: 20px;
+    }
+
+    .linksredesfinal{ 
+        margin-top: 20px;    
+        padding-bottom: 0px;   
+    }
+
+    .neonContacto{
+        margin-left: auto;
+        margin-top: 430px;
+    }
+
+    .textoPrincipalContacto {
+        width: 100px;
+    }
+
+    .footerContacto{
+        padding-top: 5px;
+        height: 120px;
+        top: 1100px;
+        h6{
+            font-size: 15px;
+        }
+    }
+
 }
 
 
@@ -957,6 +1106,35 @@ h1{
             font-size: 13px;
         }
     }
+
+    /* Contacto */
+
+    .neonContacto {
+        margin-left: auto;
+        margin-top: 1px;
+    }
+
+    .footerContacto{
+        height: 110px;
+        top: 1100px;
+        h6{
+            font-size: 13px;
+        }
+    }
+
+    .neonContacto img {
+        width: 315px;
+        height: 400px;
+    }
+
+    .resumenContacto{
+        width: 300px;
+        p{
+            font-size: 16px;
+        }
+    }
+
+
 }
 
 
@@ -1071,4 +1249,27 @@ h1{
             padding-bottom: 11px;
         }
     }
+
+    /* Contacto */
+
+    .resumenContacto{
+        width: 270px;
+    }
+
+    .neonContacto{
+        width: 280px;
+        img{
+            height: 360px;
+        }
+    }
+
+    .footerContacto{
+        height: 125px;
+        top: 1065px;
+        h6{
+            font-size: 14px;
+            padding-bottom: 11px;
+        }
+    }
+
 }
