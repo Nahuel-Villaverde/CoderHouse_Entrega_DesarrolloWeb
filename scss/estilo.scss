@@ -5,6 +5,8 @@
     font-family: 'Inter', sans-serif;
 }
 
+$fondoSecundario: #1b263b27;
+
 html{
     font-size: 62.5%;
 }
@@ -65,7 +67,7 @@ ul{
 }
 
 .nombre{
-    height: 90px;
+    height: 75px;
     margin-top: 220px;
     margin-left: 80px;
 }
@@ -116,7 +118,7 @@ h1{
 
 .footer{
     padding-top: 10px;
-    background-color: #1b263b27;
+    background-color: $fondoSecundario;
     color: white;
     height: 140px;
     position: absolute;
@@ -225,7 +227,7 @@ h1{
 
 .footerProyectos{
     padding-top: 10px;
-    background-color: #1b263b27;
+    background-color: $fondoSecundario;
     color: white;
     height: 140px;
     position: absolute;
@@ -246,7 +248,7 @@ h1{
 
 .footerContacto{
     padding-top: 10px;
-    background-color: #1b263b27;
+    background-color: $fondoSecundario;
     color: white;
     height: 140px;
     position: absolute;
@@ -319,7 +321,7 @@ h1{
 
 .footerHabilidades{
     padding-top: 10px;
-    background-color: #1b263b27;
+    background-color: $fondoSecundario;
     color: white;
     height: 140px;
     position: absolute;
@@ -388,11 +390,7 @@ h1{
     font-family: 'Inter', sans-serif;
 }
 
-.grantitulo{
-    margin-top: 80px;
-    margin-left: 80px;
-    width: 300px;
-}
+
 
 .contenedor__informacionextra{
     display: flex;
@@ -420,7 +418,7 @@ h1{
 
 .footerSobremi{
     padding-top: 10px;
-    background-color: #1b263b27;
+    background-color: $fondoSecundario;
     color: white;
     height: 140px;
     position: absolute;
@@ -552,7 +550,7 @@ h1{
 }
 
 .nombreContacto{
-    height: 90px;
+    height: 75px;
     margin-top: 220px;
     margin-left: 80px;
 }
@@ -731,7 +729,7 @@ h1{
     }
     
     .nombreContacto{
-        height: 90px;
+        height: 75px;
         margin-top: 140px;
         margin-left: 60px;
         h1{
@@ -776,6 +774,47 @@ h1{
             height: 400px;
             
         }
+    }
+
+    /* Sobre mi */
+
+    .imagenPerfil {
+        width: 350px;
+        margin-left: 0px;
+        padding-top: 95px;
+    }
+
+    .informacion{
+        margin-top: 100px;
+        margin-left: 60px;
+        h1{
+            font-size: 35px;
+            height: 75px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+
+    .frase{
+        width: 570px;
+    }
+
+    .cita{
+        font-size: 18px;
+    }
+
+    .autor{
+        font-size: 19px;
+    }
+
+    .contenedor__informacionextra p{
+        width: 610px;
+        font-size: 16px;
+    }
+    
+    .footerSobremi{
+        top: 1500px;
     }
     
 
@@ -1023,6 +1062,47 @@ h1{
         }
     }
 
+    /* Sobre mi */
+
+    .contenedor{
+        flex-wrap: wrap;
+    }
+
+    .informacion{
+        margin-left: 27.5px;
+        p{
+            width: 345px;
+        }
+    }
+
+    .imagenPerfil{
+        padding-top: 70px;
+    }
+
+    .frase {
+        width: 340px;
+    }
+
+    .cita{
+        font-size: 15px;
+    }
+
+    .contenedor__informacionextra p{
+        margin-left: 27.5px;
+        width: 365px;
+    }
+
+    .footerSobremi{
+        padding-top: 5px;
+        height: 120px;
+        top: 1750px;
+        h6{
+            font-size: 15px;
+        }
+    }
+
+
+
 }
 
 
@@ -1133,6 +1213,29 @@ h1{
             font-size: 16px;
         }
     }
+
+    /* Sobre mi */
+
+    .informacion p{
+        width: 311px;
+    }
+
+    .informacion h1{
+        font-size: 30px;
+    }
+
+    .contenedor__informacionextra p{
+        width: 311px;
+    }
+
+    .footerSobremi{
+        height: 110px;
+        top: 1900px;
+        h6{
+            font-size: 13px;
+        }
+    }
+
 
 
 }
@@ -1266,6 +1369,41 @@ h1{
     .footerContacto{
         height: 125px;
         top: 1065px;
+        h6{
+            font-size: 14px;
+            padding-bottom: 11px;
+        }
+    }
+
+    /* Sobre mi */
+
+    .informacion p {
+        width: 265px;
+    }
+    
+    .imagenPerfil{
+        width: 280px;
+        margin-left: 7px;
+    }
+
+    .frase{
+        padding: 10px 50px;
+    }
+
+    .cita{
+        margin-top: 10px;
+    }
+
+    .contenedor__informacionextra{
+        padding: 0px;
+        p{
+            width: 265px;
+        }
+    }
+
+    .footerSobremi{
+        height: 125px;
+        top: 1885px;
         h6{
             font-size: 14px;
             padding-bottom: 11px;
