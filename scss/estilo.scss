@@ -7,6 +7,12 @@
 
 $fondoSecundario: #1b263b27;
 
+@mixin nombreMixin ($height, $margin-top, $margin-left){
+    height: $height;
+    margin-top: $margin-top;
+    margin-left: $margin-left;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -51,7 +57,6 @@ body{
     
 }
 
-
 ul{
     margin-bottom: 0px;
     padding: 0px;
@@ -67,9 +72,7 @@ ul{
 }
 
 .nombre{
-    height: 75px;
-    margin-top: 220px;
-    margin-left: 80px;
+    @include nombreMixin(75px, 220px, 80px)
 }
 
 h1{
@@ -226,45 +229,12 @@ h1{
 }
 
 .footerProyectos{
-    padding-top: 10px;
-    background-color: $fondoSecundario;
-    color: white;
-    height: 140px;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    text-align: center;
+    @extend .footer;
     top: 2450px;
-    h6{
-        font-size: 18px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-top: 5px;
-        margin-bottom: 0px;
-        font-weight: 800;
-    
-    }
 }
 
 .footerContacto{
-    padding-top: 10px;
-    background-color: $fondoSecundario;
-    color: white;
-    height: 140px;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    text-align: center;
-    top: 1500px;
-    h6{
-        font-size: 18px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-top: 5px;
-        margin-bottom: 0px;
-        font-weight: 800;
-    
-    }
+    @extend .footer;
 }
 
 .neonContacto{
@@ -320,24 +290,8 @@ h1{
 
 
 .footerHabilidades{
-    padding-top: 10px;
-    background-color: $fondoSecundario;
-    color: white;
-    height: 140px;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    text-align: center;
+    @extend .footer;
     top: 1000px;
-    h6{
-        font-size: 18px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-top: 5px;
-        margin-bottom: 0px;
-        font-weight: 800;
-    
-    }
 }
 
 .imagenPerfil{
@@ -370,7 +324,7 @@ h1{
 
 }
 
-.frase{
+.frase {
     background-color: #1b263bbd;
     color: rgb(165, 165, 165)  ;
     margin-top: 100px;
@@ -378,6 +332,7 @@ h1{
     border-radius: 3%;
     width: 1000px;
 }
+
 
 .cita {
     font-weight: 300;
@@ -417,26 +372,9 @@ h1{
 }
 
 .footerSobremi{
-    padding-top: 10px;
-    background-color: $fondoSecundario;
-    color: white;
-    height: 140px;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    text-align: center;
+    @extend .footer;
     top: 1650px;
-    h6{
-        font-size: 18px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-top: 5px;
-        margin-bottom: 0px;
-        font-weight: 800;
-    
-    }
 }
-
 
 .contenedorIndexContacto{
     display: flex;
@@ -448,6 +386,7 @@ h1{
     font-size: 18px;
     padding-left: 80px;
 }
+
 
 .linksredes{
     margin-top: 30px;
@@ -480,7 +419,24 @@ h1{
       "img1 img2 img3"
       "img4 img5 img6"
       "img7 img8 img9";
+    img{
+        -webkit-filter: blur(0);
+	filter: blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    }
+    img:hover{
+        -webkit-filter: blur(3px);
+	filter: blur(3px);
+    }
 }
+
+/* .hover10 figure img {
+	
+}
+.hover10 figure:hover img {
+	
+} */
   
 .proyecto3{
     grid-area: img1;
@@ -554,6 +510,7 @@ h1{
     margin-top: 220px;
     margin-left: 80px;
 }
+
 
 
 
@@ -690,10 +647,11 @@ h1{
 
     .textoPrincipal__proyectos2{
         margin-top: 40px;
-        margin-left: 80px;
+        
         h2{
             font-size: 35px;
         }
+        margin-left: 80px;
     }
 
     .otros h2{

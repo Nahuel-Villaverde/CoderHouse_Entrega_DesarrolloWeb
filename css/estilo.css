@@ -110,7 +110,7 @@ h1 {
   display: none;
 }
 
-.footer {
+.footer, .footerSobremi, .footerHabilidades, .footerContacto, .footerProyectos {
   padding-top: 10px;
   background-color: rgba(27, 38, 59, 0.1529411765);
   color: white;
@@ -121,7 +121,7 @@ h1 {
   text-align: center;
   top: 1500px;
 }
-.footer h6 {
+.footer h6, .footerSobremi h6, .footerHabilidades h6, .footerContacto h6, .footerProyectos h6 {
   font-size: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -215,43 +215,7 @@ h1 {
 }
 
 .footerProyectos {
-  padding-top: 10px;
-  background-color: rgba(27, 38, 59, 0.1529411765);
-  color: white;
-  height: 140px;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
   top: 2450px;
-}
-.footerProyectos h6 {
-  font-size: 18px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  font-weight: 800;
-}
-
-.footerContacto {
-  padding-top: 10px;
-  background-color: rgba(27, 38, 59, 0.1529411765);
-  color: white;
-  height: 140px;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
-  top: 1500px;
-}
-.footerContacto h6 {
-  font-size: 18px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  font-weight: 800;
 }
 
 .neonContacto {
@@ -304,23 +268,7 @@ h1 {
 }
 
 .footerHabilidades {
-  padding-top: 10px;
-  background-color: rgba(27, 38, 59, 0.1529411765);
-  color: white;
-  height: 140px;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
   top: 1000px;
-}
-.footerHabilidades h6 {
-  font-size: 18px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  font-weight: 800;
 }
 
 .imagenPerfil {
@@ -396,23 +344,7 @@ h1 {
 }
 
 .footerSobremi {
-  padding-top: 10px;
-  background-color: rgba(27, 38, 59, 0.1529411765);
-  color: white;
-  height: 140px;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
   top: 1650px;
-}
-.footerSobremi h6 {
-  font-size: 18px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  font-weight: 800;
 }
 
 .contenedorIndexContacto {
@@ -454,7 +386,23 @@ h1 {
   grid-auto-flow: row;
   grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9";
 }
+.contenedor__proyectos3 img {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.contenedor__proyectos3 img:hover {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
 
+/* .hover10 figure img {
+
+}
+.hover10 figure:hover img {
+
+} */
 .proyecto3 {
   grid-area: img1;
   width: 100%;
@@ -576,7 +524,7 @@ h1 {
     font-size: 17px;
     padding-left: 60px;
   }
-  .footer {
+  .footer, .footerProyectos, .footerContacto, .footerHabilidades, .footerSobremi {
     top: 1100px;
   }
   /* Habilidades */
@@ -797,12 +745,12 @@ h1 {
     width: 200px;
     padding-left: 80px;
   }
-  .footer {
+  .footer, .footerProyectos, .footerContacto, .footerHabilidades, .footerSobremi {
     top: 1300px;
     padding-top: 5px;
     height: 120px;
   }
-  .footer h6 {
+  .footer h6, .footerProyectos h6, .footerContacto h6, .footerHabilidades h6, .footerSobremi h6 {
     font-size: 15px;
   }
   .textoFooter {
@@ -980,10 +928,10 @@ h1 {
   .neon3 {
     padding-left: 50px;
   }
-  .footer {
+  .footer, .footerProyectos, .footerContacto, .footerHabilidades, .footerSobremi {
     height: 110px;
   }
-  .footer h6 {
+  .footer h6, .footerProyectos h6, .footerContacto h6, .footerHabilidades h6, .footerSobremi h6 {
     font-size: 13px;
   }
   .textoFooter {
@@ -1073,10 +1021,10 @@ h1 {
   .neon3 {
     padding-left: 100px;
   }
-  .footer {
+  .footer, .footerProyectos, .footerContacto, .footerHabilidades, .footerSobremi {
     height: 125px;
   }
-  .footer h6 {
+  .footer h6, .footerProyectos h6, .footerContacto h6, .footerHabilidades h6, .footerSobremi h6 {
     font-size: 14px;
   }
   .textoFooter {
