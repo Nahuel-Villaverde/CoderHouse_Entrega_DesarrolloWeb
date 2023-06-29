@@ -421,13 +421,13 @@ h1{
       "img7 img8 img9";
     img{
         -webkit-filter: blur(0);
-	filter: blur(0);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+        filter: blur(0);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
     }
     img:hover{
         -webkit-filter: blur(3px);
-	filter: blur(3px);
+	    filter: blur(3px);
     }
 }
 
