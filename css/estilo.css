@@ -261,6 +261,7 @@ h1 {
 }
 .lenguajes h3 {
   margin-bottom: 20px;
+  font-size: 20px;
 }
 .lenguajes li {
   margin-bottom: 5px;
@@ -476,6 +477,10 @@ h1 {
   margin-left: 80px;
 }
 
+.resaltado {
+  color: rgb(168, 124, 192);
+}
+
 @media screen and (max-width: 768px) {
   .textoPrincipal {
     width: 300px;
@@ -502,6 +507,10 @@ h1 {
   }
   .resumen p {
     font-size: 16px;
+  }
+  .resaltado {
+    font-size: 16px;
+    color: rgb(168, 124, 192);
   }
   .neon {
     width: 315px;
